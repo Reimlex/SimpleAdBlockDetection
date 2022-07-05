@@ -1,3 +1,4 @@
+// v1.0.0
 // Script by Reimlex
 // GitHub: https://github.com/Reimlex
 
