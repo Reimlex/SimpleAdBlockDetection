@@ -6,7 +6,7 @@ function isBlocking() {
     var blocking = false;
     var element = document.getElementById('sabd');
     if (element) {
-        let CL = ['ad', 'ads', 'doubleclick', 'ad-placement', 'ad-placeholder', 'adbadge', 'BannerAd', 'banner', 'adsbygoogle'];
+        let CL = ['ad', 'ads', 'adsbox', 'ad-placement', 'ad-placeholder', 'adbadge', 'BannerAd', 'banner', 'adsbygoogle'];
         for (let item of CL) {
             element.classList.add(item);
         }
