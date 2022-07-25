@@ -1,0 +1,168 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    color: #FFF;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 5px 0px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    margin: 20px 0 5px 0;
+}
+
+code,
+code>span {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper>div {
+    width: 500px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background: rgba(8, 8, 8, 0.5);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 4%), 0 4px 20px rgb(0 0 0 / 10%);
+    transition: 0.25s;
+}
+
+.github:link,
+.github:visited {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: block;
+    font-size: 10pt;
+    font-weight: 400;
+    color: #d7d7d7;
+    margin: 0px auto 20px auto;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.github:hover,
+.github:active {
+    color: #fff;
+    background: rgb(8 8 8 / 30%);
+}
+
+.grid-function {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.grid-function>code,
+.grid-function>code>span {
+    font-size: 12pt;
+}
+
+.grid-function>code:nth-child(2n+1) {
+    color: #d8b4ff;
+}
+.grid-function>code:nth-child(1) {
+    color: #79c0ff;
+}
+
+.grid-function>code:nth-child(2n+1)>span {
+    color: #eedfff;
+}
+
+.grid-function>.bool {
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px 10px;
+    transition: 0.25s;
+}
+
+.grid-function>.bool.false {
+    color: #000000;
+    background: #9EB23B;
+}
+
+
+.grid-function>.bool.true {
+    color: #FFF;
+    background: #FF0063;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@media only screen and (max-width: 599px) {
+    h1 {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 14pt;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    .wrapper>div {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .grid-function>code,
+    .grid-function>code>span {
+        font-size: 10pt;
+    }
+}
