@@ -6,7 +6,7 @@
  * GitHub: https://github.com/Reimlex/SimpleAdBlockDetection
  */
 
-const SADB_BLOCKED = false;
+const SABD_BLOCKED = false;
 
 function isBlocking() {
     var blocking = false;
