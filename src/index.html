@@ -24,7 +24,7 @@
             <p>This is a simple script designed to detect ad blocking by the user.</p>
             <h2>Test:</h2>
             <div class="grid-function">
-                <code>SADB_BLOCKED</code>
+                <code>SABD_BLOCKED</code>
                 <code class="bool false">false</code>
                 <code>isBlocking<span>()</span></code>
                 <code class="bool false">false</code>
@@ -36,7 +36,7 @@
     <script type="text/javascript">
         window.onload = function () {
             var funBoolRes = document.querySelectorAll('.grid-function .bool');
-            if (typeof SADB_BLOCKED == 'undefined') {
+            if (typeof SABD_BLOCKED == 'undefined') {
                 funBoolRes[0].innerText = 'true';
                 funBoolRes[0].classList.replace('false', 'true');
             } else {
