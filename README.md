@@ -1,7 +1,7 @@
 # SimpleAdBlockDetection
 This is a simple script designed to detect ad blocking by the user.
 
-![Screenshot](https://i.ibb.co/k9BzH0h/Simple-Ad-Block-Detection.png)
+![Screenshot](https://i.ibb.co/4pxvN5q/SABD.png)
 
 ## Configuration
 | Option                | Type    | Description                      |
